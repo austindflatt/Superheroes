@@ -9,3 +9,7 @@ class SuperHeroes(models.Model):
     primary_ability = models.CharField
     secondary_ability = models.CharField
     catchphrase = models.CharField
+
+
+    def __str__(self):
+        return self.superhero_name
