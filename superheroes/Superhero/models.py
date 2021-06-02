@@ -4,16 +4,12 @@ from django.db import models
 
 
 class SuperHeroes(models.Model):
-    superhero_name = models.CharField
-    alter_ego_name = models.CharField
-    primary_ability = models.CharField
-    secondary_ability = models.CharField
-    catchphrase = models.CharField
+    superhero_name = models.CharField(max_length=50)
+    alter_ego_name = models.CharField(max_length=50)
+    primary_ability = models.CharField(max_length=50)
+    secondary_ability = models.CharField(max_length=50)
+    catchphrase = models.CharField(max_length=50)
 
 
     def __str__(self):
         return self.superhero_name
-        return self.alter_ego_name
-        return self.primary_ability
-        return self.secondary_ability
-        return self.catchphrase
