@@ -13,3 +13,7 @@ class SuperHeroes(models.Model):
 
     def __str__(self):
         return self.superhero_name
+        return self.alter_ego_name
+        return self.primary_ability
+        return self.secondary_ability
+        return self.catchphrase
