@@ -5,13 +5,14 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add a superhero</title>
+    <title>Add a new SuperHero</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-<h1>Add a superhero</h1>
+<h1>Add a new SuperHero</h1>
 <form action="{% url 'Superhero:create_new_superhero' %}" method="post">
     {% csrf_token %}
+    Superhero Picture(Link):<input type="text" name="superhero_picture" id="superhero_picture"><br>
     Superhero Name:<input type="text" name="superhero_name" id="superhero_name"><br>
     Alter Ego Name:<input type="text" name="alter_ego_name" id="alter_ego_name"><br>
     Primary Ability:<input type="text" name="primary_ability" id="primary_ability"><br>

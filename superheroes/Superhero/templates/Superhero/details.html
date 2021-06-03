@@ -5,10 +5,19 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>SuperHero Info</title>
+    <title>{{hero.superhero_name}} - SuperHero</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 </head>
 <body>
-<h1>About this superhero</h1>
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">SuperHero Creator 🦸‍</a>
+      <a class="navbar-brand" href="new">Create</a>
+  </div>
+</nav>
+<h1>Details about {{hero.superhero_name}}</h1>
+<a href="{% url 'Superhero:delete' hero.id %}">Delete hero</a>
+<a href="{% url 'Superhero:edit' hero.id %}">Edit hero</a><br>
 {{hero.superhero_name}}
 {{hero.alter_ego_name}}
 {{hero.primary_ability}}
