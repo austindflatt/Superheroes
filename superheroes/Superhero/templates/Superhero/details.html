@@ -9,5 +9,8 @@
 </head>
 <body>
 <h1>About this superhero</h1>
+{% for SuperHero in all_superheroes %}
+<h2> {{SuperHero.superhero_name}} </h2>
+{% endfor %}
 </body>
 </html>
