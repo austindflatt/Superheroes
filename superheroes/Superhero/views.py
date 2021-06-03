@@ -6,8 +6,8 @@ from .models import SuperHeroes
 
 
 def index(request):
-    all_superheros = SuperHeroes.objects.all()
+    all_superheroes = SuperHeroes.objects.all()
     context = {
-        'all_superheroes': all_superheros
+        'all_superheroes': all_superheroes
     }
-    return render(request, 'Superhero/index.html')
+    return render(request, 'Superhero/index.html', context)

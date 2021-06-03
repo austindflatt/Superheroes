@@ -8,6 +8,11 @@
     <title>Superhero App</title>
 </head>
 <body>
-<h1>Hello World!</h1>
+<h1>SuperHeroes</h1><a href="#">Add a SuperHero</a>
+<ul>
+    {% for SuperHero in all_superheroes %}
+    <li><h2> {{SuperHero.superhero_name}} </h2></li>
+    {% endfor %}
+</ul>
 </body>
 </html>
