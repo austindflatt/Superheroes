@@ -21,6 +21,7 @@ def detail(request, superhero_id):
     }
     return render(request, 'Superhero/details.html', context)
 
+
 def create(request):
     if request.method == 'POST':
         superhero_name = request.POST.get('superhero_name')
