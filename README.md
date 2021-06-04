@@ -1,4 +1,4 @@
 # Superheroes
-devCodeCamp Superhero project
+devCodeCamp Superhero project built using Django
 
 ![Screenshot](screenshot.png)
